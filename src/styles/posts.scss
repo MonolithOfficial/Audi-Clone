@@ -1,0 +1,76 @@
+.post-bunch {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.2rem;
+    & .post {
+        width: 49%;
+        margin-bottom: 1.5rem;
+        max-width: 630px;
+
+
+        & .post-thumb {
+            height: 350px;
+            max-height: 500px;
+            position: relative;
+            // padding-bottom: 18%
+
+            & .zoomableImage {
+                min-width: 600px;
+                margin-top: 0;
+            } 
+        }
+        & .postContent {
+            width: 90%;
+            padding-left: 0.8rem;
+            
+            & .postCategory {
+                opacity: 0.6;
+                font-size: 13px;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            & .postTitle {
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            & .postDescription {
+                margin-top: 0;
+            }
+        }
+
+        & hr {
+            display: none;
+        }
+
+        & .e_tron-description {
+            
+            display: none;
+        }
+    }
+
+
+    & .post:nth-child(2){
+
+        & hr {
+            display: block;
+        }
+
+        & .e_tron-description {
+            display: block;
+            display: flex;
+            flex-direction: column;
+
+            & span {
+                line-height: 1.2rem;
+                font-size: 12px;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+

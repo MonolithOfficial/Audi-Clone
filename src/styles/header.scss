@@ -1,0 +1,42 @@
+header {
+    background-color: black;
+    height: fit-content;
+    
+
+    & .header-holder {
+        width: 93%;
+        display: flex;
+        justify-content: space-between; 
+        margin: auto;
+        align-items: center;
+
+        & ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-content: center;
+            column-gap:2.3rem;
+
+            & li {
+                display: flex;
+                padding: 7px 0;
+                align-items: center;
+
+                & a {
+                    font-size: 14px;
+                    line-height: 1rem;
+                    font-weight: 400;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        & .right-side {
+            column-gap: 4px;
+        }
+    }
+
+    
+}

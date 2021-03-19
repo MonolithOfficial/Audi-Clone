@@ -1,0 +1,16 @@
+.button-white {
+    background: none;
+    padding: 20px 80px;
+    border: 1px solid;
+    transition: 0.4s;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-color: white;
+    text-shadow: 2px 1px 7px rgba(0, 0, 0, 1);
+
+    &:hover {
+        border-color: rgb(192,192,192);
+        color: rgb(192,192,192);
+    }
+}

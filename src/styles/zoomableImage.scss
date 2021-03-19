@@ -1,0 +1,73 @@
+.zoomableImageContainer {
+    // background-image: url(http://im.tech2.in.com/gallery/2012/dec/stockimage_070930177527_640x360.jpg);
+    // height: 80vh;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    & .zoomableImageContent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+        & h3, h4 {
+            color: white;
+        }
+
+        & h3 {
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 1px 7px rgba(0, 0, 0, 1);
+        }
+
+        & h4 {
+            font-weight: lighter;
+            text-align: center;
+            font-size: 20px;
+            text-shadow: 2px 1px 7px rgba(0, 0, 0, 1);
+        }
+    }
+
+    & .zoomableImage {
+        margin-top: -200px;
+        width: 100%;
+
+        // height: 100%;
+        max-width: 100%;
+        min-width: 1366px;
+        // max-height: 100%;
+        position: absolute;
+        
+        background-position: center;
+        background-size: cover;
+
+        transition: 0.4s;
+
+    }
+}
+
+.zoomableImageContainer .ovl {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.zoomableImageContainer:hover .zoomableImage{
+    transform: scale(1.2);
+}
+
+.zoomableImageContainer:hover .ovl {
+    opacity: 1;
+}

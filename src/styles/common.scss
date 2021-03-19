@@ -1,0 +1,44 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: AudiType;
+    src: url(../fonts/AudiType-ExtendedBold_03.woff);
+}
+
+@font-face {
+    font-family: 'Audi Type';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Audi Type Extended Bold'), url('../fonts/AudiType-ExtendedBold_03.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Audi Type';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Audi Type Extended Bold'), url('../fonts/AudiType-Normal_03.woff') format('woff');
+    }
+
+body {
+    font-family: 'Audi Type';
+    font-weight: normal;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+

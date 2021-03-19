@@ -1,0 +1,25 @@
+.landingSectionOne {
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+}
+
+.landingSectionTwo {
+    .landingHeadText {
+
+        & h1 {
+            font-size: 42px;
+            text-align: center;
+            font-weight: bolder;
+        }
+    
+        p {
+            max-width: 750px;
+            line-height: 1.6rem;
+            display: block;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+    }
+    
+}
